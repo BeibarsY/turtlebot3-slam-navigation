@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="labyrinth">
+    <!--
+      Static = the labyrinth never moves. Without this, contacts with the
+      TurtleBot3 chassis would push the walls and SLAM/Nav2 would diverge.
+    -->
+    <static>true</static>
+
+    <link name="walls">
+      <!--
+        Collision and visual both reference the same STL mesh.
+
+        The STL is intentionally NOT committed to the repository because
+        it is a binary asset that varies per group. Place your STL at
+            gazebo/models/labyrinth/meshes/labyrinth.stl
+        before launching the world.
+      -->
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://labyrinth/meshes/labyrinth.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://labyrinth/meshes/labyrinth.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

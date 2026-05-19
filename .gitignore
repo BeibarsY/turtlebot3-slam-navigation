@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# ROS 2 / colcon build artifacts (if anyone clones into a workspace)
+build/
+install/
+log/
+.colcon/
+
+# Maps (large binary, group-specific; reproduce locally)
+maps/*.pgm
+
+# STL meshes (large binary, group-specific)
+gazebo/models/labyrinth/meshes/*.stl
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local environment overrides
+.env

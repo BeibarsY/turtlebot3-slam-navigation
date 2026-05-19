@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="labyrinth_world">
+
+    <!-- Physics: standard ODE settings used in TurtleBot3 tutorials. -->
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Default lighting and floor. -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!--
+      Custom labyrinth. Resolved via GAZEBO_MODEL_PATH, which should
+      include the gazebo/models/ folder of this repository:
+
+        export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:<path-to-repo>/gazebo/models
+    -->
+    <include>
+      <uri>model://labyrinth</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!--
+      Top-down camera for visualizing the maze layout during recording.
+      Pose: above the center of the world, looking straight down.
+    -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0 0 12 0 1.5707 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
