@@ -306,7 +306,7 @@ source ~/.bashrc
 ## Authors
 
 ROBT 502 group, Department of Robotics, Nazarbayev University:
-Beibars Ybraiakhyn, Didar Rakhimbay, Birzhan Zhunusbekov, Alim Daniyarov, Chidiadi Bethel Mba.
+Beibars Ybraiakhyn, Didar Rakhimbay
 
 Instructor: Zhanat Kappassov.
 
