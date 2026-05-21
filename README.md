@@ -10,19 +10,22 @@ End-to-end mobile-robot pipeline on the TurtleBot3 Burger platform: build a 2D o
 
 <table>
 <tr>
-<td width="33%" align="center">
-  <em>Phase 1 — Real-world SLAM mapping</em><br/>
+<td width="50%" align="center">
+  <em>The whole map</em><br/>
   <img src="docs/1.gif" width="100%" />
 </td>
 
-<td width="33%" align="center">
-  <em>Phase 2 — Custom Gazebo + SLAM</em><br/>
+<td width="50%" align="center">
+  <em>Real-world SLAM mapping</em><br/>
   <img src="docs/2.gif" width="100%" />
 </td>
+</tr>
 
-<td width="34%" align="center">
-  <em>Phase 3 — Nav2 autonomous navigation</em><br/>
-  (GIF coming soon)
+<tr>
+<td colspan="2" align="center">
+  <br/>
+  <em>Custom Gazebo + SLAM and Nav2 autonomous navigation</em><br/>
+  <img src="docs/3.gif" width="70%" />
 </td>
 </tr>
 </table>
