@@ -8,21 +8,9 @@ End-to-end mobile-robot pipeline on the TurtleBot3 Burger platform: build a 2D o
 
 ## Demos
 
-<!-- ============================================================
-     TODO: replace each placeholder with the matching GIF when ready.
-
-     File names expected:
-       docs/demo_real_slam.gif       (Phase 1 — real robot building map)
-       docs/demo_sim_slam.gif        (Phase 2 — Gazebo SLAM)
-       docs/demo_nav2_autonomous.gif (Phase 3 — Nav2 autonomous run)
-
-     Recommended: 10-15s loop, 480p width, 15 fps, < 5MB each.
-     Convert MP4 -> GIF at https://ezgif.com/video-to-gif
-     ============================================================ -->
-
 <table>
 <tr>
-<td width="33%" align="center"><em>Phase 1 — Real-world SLAM mapping<br/>(GIF coming soon)</em></td>
+<td width="33%" align="center"><em>Phase 1 — Real-world SLAM mapping<br/>1.gif</em></td>
 <td width="33%" align="center"><em>Phase 2 — Custom Gazebo + SLAM<br/>(GIF coming soon)</em></td>
 <td width="34%" align="center"><em>Phase 3 — Nav2 autonomous navigation<br/>(GIF coming soon)</em></td>
 </tr>
